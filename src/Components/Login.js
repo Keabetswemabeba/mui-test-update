@@ -16,6 +16,9 @@ function Login() {
         display: "flex",
         flexDirection: "row",
         width: "100%",
+        height: "100vh",
+        justifyContent: 'center',
+        alignItems: 'center',
         gap: "10px",
       }}
     >
@@ -67,9 +70,9 @@ function Login() {
             fullWidth
             sx={{ marginBottom: "2rem", fontWeight: '400' }}
           >
-            <Typography sx={{marginBottom: "0.2rem", color: "#1C3F53"}}>Email</Typography>
+            <Typography sx={{marginBottom: "0.3rem", color: "#1C3F53"}}>Email</Typography>
             <TextField variant="outlined" fullWidth sx={{borderRadius: '12px'}} />
-            <FormHelperText style={{ color: "red" }} sx={{ textAlign: 'left' }}>
+            <FormHelperText style={{ color: "red" }} sx={{ textAlign: 'left', justifyContent: 'left', alignSelf: 'left' }}>
               Email is invalid
             </FormHelperText>
           </FormControl>
@@ -77,14 +80,14 @@ function Login() {
             fullWidth
             sx={{ marginBottom: "2rem", color: "#1C3F53", fontWeight: '400' }}
           >
-            <Typography sx={{marginBottom: "0.2rem", color: "#1C3F53"}}>Password</Typography>
+            <Typography sx={{marginBottom: "0.3rem", color: "#1C3F53"}}>Password</Typography>
             <TextField
               variant="outlined"
               type="password"
               fullWidth
               sx={{borderRadius: '12px'}}
             />
-            <FormHelperText style={{ color: "red" }} sx={{ textAlign: 'left' }}>
+            <FormHelperText style={{ color: "red" }} sx={{ textAlign: 'left', justifyContent: 'left', alignSelf: 'left' }}>
               Password is invalid
             </FormHelperText>
           </FormControl>
