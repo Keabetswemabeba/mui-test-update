@@ -69,7 +69,7 @@ function Login() {
           >
             <Typography sx={{marginBottom: "0.2rem", color: "#1C3F53"}}>Email</Typography>
             <TextField variant="outlined" fullWidth sx={{borderRadius: '12px'}} />
-            <FormHelperText style={{ color: "red" }}>
+            <FormHelperText style={{ color: "red", textAlign: 'left' }}>
               Email is invalid
             </FormHelperText>
           </FormControl>
@@ -84,7 +84,7 @@ function Login() {
               fullWidth
               sx={{borderRadius: '12px'}}
             />
-            <FormHelperText style={{ color: "red" }}>
+            <FormHelperText style={{ color: "red", textAlign: 'left' }}>
               Password is invalid
             </FormHelperText>
           </FormControl>
@@ -108,7 +108,7 @@ function Login() {
               borderRadius: "30px",
               padding: "15px",
               color: "white",
-              width: "260px",
+              width: "200px",
               fontSize: "14px",
               textTransform: "uppercase",
               alignSelf: 'center',
