@@ -16,16 +16,16 @@ function Login() {
         display: "flex",
         flexDirection: "row",
         width: "100%",
-        gap: "5px",
+        gap: "10px",
       }}
     >
       <Container
-        sx={{ justifyContent: "center", alignItems: "center", width: "50%" }}
+        sx={{ width: "50%" }}
       >
         <img
           src={require("../assets/Logo.png")}
           alt="Ezamazwe Logo"
-          style={{ alignSelf: "center", marginTop: "100px" }}
+          style={{ marginTop: "100px", alignSelf: 'left' }}
           width={"100%"}
         />
       </Container>
@@ -69,7 +69,7 @@ function Login() {
           >
             <Typography sx={{marginBottom: "0.2rem", color: "#1C3F53"}}>Email</Typography>
             <TextField variant="outlined" fullWidth sx={{borderRadius: '12px'}} />
-            <FormHelperText style={{ color: "red", textAlign: 'left' }}>
+            <FormHelperText style={{ color: "red" }} sx={{ textAlign: 'left' }}>
               Email is invalid
             </FormHelperText>
           </FormControl>
@@ -84,7 +84,7 @@ function Login() {
               fullWidth
               sx={{borderRadius: '12px'}}
             />
-            <FormHelperText style={{ color: "red", textAlign: 'left' }}>
+            <FormHelperText style={{ color: "red" }} sx={{ textAlign: 'left' }}>
               Password is invalid
             </FormHelperText>
           </FormControl>
@@ -103,7 +103,7 @@ function Login() {
           <Button
             variant="contained"
             sx={{
-              marginTop: "20px",
+              marginTop: "30px",
               bgcolor: "#1C3F53",
               borderRadius: "30px",
               padding: "15px",
@@ -112,7 +112,7 @@ function Login() {
               fontSize: "14px",
               textTransform: "uppercase",
               alignSelf: 'center',
-              marginLeft: "25%"
+              marginLeft: "30%"
             }}
             style={{ justifyContent: "center", alignItems: "center", backgroundColor: "#1C3F53", color: 'white'}}
           >
