@@ -6,7 +6,7 @@ import {
   FormControl,
   FormHelperText,
   Typography,
-  TextField,
+  OutlinedInput,
   Grid,
 } from "@mui/material";
 
@@ -99,18 +99,18 @@ function Login() {
                 <Typography sx={{ marginBottom: "0.3rem", color: "#1C3F53", fontSize: '15px' }}>
                   Email Address
                 </Typography>
-                <TextField
+                <OutlinedInput
                   variant="outlined"
                   fullWidth
-                  sx={{ borderRadius: "12px", height: '30px' }}
+                  sx={{ borderRadius: "12px", height: '50px' }}
                 />
                 <FormHelperText
                   style={{ color: "red" }}
                   sx={{
                     textAlign: "left",
                     justifyContent: "left",
-                    alignSelf: "left",
-                    marginTop: '30px'
+                    alignSelf: 'flex-start',
+                    marginTop: '10px'
                   }}
                 >
                   Email address is invalid
@@ -127,19 +127,19 @@ function Login() {
                 <Typography sx={{ marginBottom: "0.3rem", color: "#1C3F53", fontSize: '15px' }}>
                   Password
                 </Typography>
-                <TextField
+                <OutlinedInput
                   variant="outlined"
                   type="password"
                   fullWidth
-                  sx={{ borderRadius: "12px", height: '30px' }}
+                  sx={{ borderRadius: "12px", height: '50px' }}
                 />
                 <FormHelperText
                   style={{ color: "red" }}
                   sx={{
                     textAlign: "left",
                     justifyContent: "left",
-                    alignSelf: "left",
-                    marginTop: '30px'
+                    alignSelf: 'flex-start',
+                    marginTop: '10px'
                   }}
                 >
                   Password is invalid
