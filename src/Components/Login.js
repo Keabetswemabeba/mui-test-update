@@ -32,6 +32,7 @@ function Login() {
         sx={{
           width: "70%",
           height: "100vh",
+          display: 'flex',
           gap: "20px",
           marginTop: "10px",
           marginBottom: "10px",
@@ -44,8 +45,8 @@ function Login() {
           sx={{
             marginTop: "25vh",
             marginBottom: "20px",
+            width: '100%',
           }}
-          fullWidth
         >
           <Box
             sx={{
@@ -55,7 +56,6 @@ function Login() {
               alignSelf: 'center',
               padding: "20px 20px",
             }}
-            fullWidth
           >
             <Typography
               sx={{
@@ -82,7 +82,7 @@ function Login() {
             </Typography>
             <FormControl
               fullWidth
-              sx={{ marginBottom: "2rem", fontWeight: "400" }}
+              sx={{ marginBottom: "2rem", color: "#1C3F53", fontWeight: "400" }}
             >
               <Typography sx={{ marginBottom: "0.3rem", color: "#1C3F53" }}>
                 Email Address
