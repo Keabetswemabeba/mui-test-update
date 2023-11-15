@@ -61,7 +61,7 @@ function Login() {
                 alignItems: "center",
                 alignSelf: "center",
                 padding: "20px 20px",
-                borderRadius: "20px",
+                borderRadius: "50px",
                 width: '50vh'
               }}
             >
@@ -81,7 +81,7 @@ function Login() {
                   marginBottom: "40px",
                   fontWeight: "500",
                   color: "#1C3F53",
-                  fontSize: "20px",
+                  fontSize: "18px",
                   textAlign: "center",
                   textTransform: "uppercase",
                 }}
@@ -166,7 +166,7 @@ function Login() {
                   padding: "15px",
                   color: "white",
                   width: "200px",
-                  height: "50px",
+                  height: "40px",
                   fontSize: "14px",
                   textTransform: "uppercase",
                   alignSelf: "center",
