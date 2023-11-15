@@ -25,7 +25,7 @@ function Login() {
       fullWidth
     >
       <Grid container>
-        <Grid item xs={4} sx={{width: '40%'}}>
+        <Grid item xs={4}>
           <Container
             sx={{
               bgcolor: "white",
