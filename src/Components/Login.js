@@ -12,7 +12,8 @@ import {
 
 function Login() {
   return (
-    <Grid container
+    <Grid
+      container
       sx={{
         display: "flex",
         flexDirection: "row",
@@ -31,8 +32,8 @@ function Login() {
               bgcolor: "white",
               height: "100vh",
               paddingTop: "30vh",
-              justifyContent: 'center',
-              alignItems: 'center',
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
             <img
@@ -43,7 +44,7 @@ function Login() {
           </Container>
         </Grid>
 
-        <Grid item xs={8} sx={{width: '60%'}}>
+        <Grid item xs={8} sx={{ width: "60%" }}>
           <Container
             sx={{
               height: "100vh",
@@ -51,22 +52,25 @@ function Login() {
               flexDirection: "column",
               alignItems: "center",
               justifyContent: "center",
-              width: '60%',
+              width: "60%",
             }}
           >
             <Box
               sx={{
+                height: "60vh",
                 backgroundColor: "white",
                 justifyContent: "center",
                 alignItems: "center",
                 alignSelf: "center",
-                padding: "20px 20px",
-                borderRadius: "50px",
-                width: '50vh'
+                padding: "40px 40px",
+                borderRadius: "10px",
+                width: "50vh",
+                boxShadow: "inherit",
               }}
             >
               <Typography
                 sx={{
+                  marginTop: "20px",
                   marginBottom: "10px",
                   fontWeight: "600",
                   color: "#1C3F53",
@@ -79,11 +83,12 @@ function Login() {
               <Typography
                 sx={{
                   marginBottom: "40px",
+                  marginTop: "15px",
                   fontWeight: "500",
                   color: "#1C3F53",
-                  fontSize: "18px",
+                  fontSize: "25px",
                   textAlign: "center",
-                  textTransform: "uppercase",
+                  fontFamily: 'Poppins',
                 }}
               >
                 Login to your account
@@ -96,20 +101,32 @@ function Login() {
                   fontWeight: "400",
                 }}
               >
-                <Typography sx={{ marginBottom: "0.3rem", color: "#1C3F53", fontSize: '15px' }}>
-                  Email Address
+                <Typography
+                  sx={{
+                    marginBottom: "0.3rem",
+                    color: "#1C3F53",
+                    fontSize: "18px",
+                    fontFamily: "Poppins",
+                  }}
+                >
+                  Email
                 </Typography>
                 <OutlinedInput
                   fullWidth
-                  sx={{ borderRadius: "12px", height: '50px' }}
+                  sx={{
+                    borderRadius: "12px",
+                    height: "50px",
+                    border: "#1C3F53",
+                    borderColor: "#1C3F53",
+                  }}
                 />
                 <FormHelperText
                   style={{ color: "red" }}
                   sx={{
                     textAlign: "left",
                     justifyContent: "left",
-                    alignSelf: 'flex-start',
-                    marginTop: '10px'
+                    alignSelf: "flex-start",
+                    marginTop: "10px",
                   }}
                 >
                   Email address is invalid
@@ -123,21 +140,32 @@ function Login() {
                   fontWeight: "400",
                 }}
               >
-                <Typography sx={{ marginBottom: "0.3rem", color: "#1C3F53", fontSize: '15px' }}>
+                <Typography
+                  sx={{
+                    marginBottom: "0.3rem",
+                    color: "#1C3F53",
+                    fontSize: "18px",
+                    fontFamily: "Poppins",
+                  }}
+                >
                   Password
                 </Typography>
                 <OutlinedInput
                   type="password"
                   fullWidth
-                  sx={{ borderRadius: "12px", height: '50px' }}
+                  sx={{
+                    borderRadius: "12px",
+                    height: "50px",
+                    borderColor: "#1C3F53",
+                  }}
                 />
                 <FormHelperText
                   style={{ color: "red" }}
                   sx={{
                     textAlign: "left",
                     justifyContent: "left",
-                    alignSelf: 'flex-start',
-                    marginTop: '10px'
+                    alignSelf: "flex-start",
+                    marginTop: "10px",
                   }}
                 >
                   Password is invalid
@@ -151,7 +179,7 @@ function Login() {
                   textAlign: "right",
                   textDecoration: "underline",
                   alignSelf: "flex-end",
-                  marginBottom: '10px'
+                  marginBottom: "10px",
                 }}
               >
                 Forgot password?
