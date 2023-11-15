@@ -5,7 +5,7 @@ import Login from "./Components/Login";
 
 function App() {
   return (
-    <Container>
+    <Container sx={{display: 'flex', width: "100%"}}>
       <Login />
     </Container>
   );
