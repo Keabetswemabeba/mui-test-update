@@ -7,11 +7,12 @@ import {
   FormHelperText,
   Typography,
   TextField,
+  Grid,
 } from "@mui/material";
 
 function Login() {
   return (
-    <Container
+    <Grid container
       sx={{
         display: "flex",
         flexDirection: "row",
@@ -23,156 +24,169 @@ function Login() {
       }}
       fullWidth
     >
-      <Container
-        sx={{
-          width: "50%",
-          color: "white",
-          bgcolor: "white",
-          height: "100vh",
-          paddingTop: "30vh",
-        }}
-      >
-        <img
-          src={require("../assets/Logo.png")}
-          alt="Ezamazwe Logo"
-          width={"100%"}
-        />
-      </Container>
-      <Container
-        sx={{
-          width: "50%",
-          height: "100vh",
-          display: "flex",
-          marginTop: "10px",
-          marginBottom: "10px",
-          alignItems: "center",
-          justifyContent: "center",
-          flexGrow: 1,
-        }}
-      >
-        <Container
-          sx={{
-            width: '100%',
-          }}
-        >
-        <Box
-          sx={{
-            backgroundColor: "white",
-            justifyContent: "center",
-            alignItems: "center",
-            alignSelf: "center",
-            padding: "20px 20px",
-          }}
-        >
-          <Typography
+      <Grid container>
+        <Grid item xs={4} sx={{width: '40%'}}>
+          <Container
             sx={{
-              marginBottom: "20px",
-              fontWeight: "600",
-              color: "#1C3F53",
-              fontSize: "36px",
-              textAlign: "center",
+              bgcolor: "white",
+              height: "100vh",
+              paddingTop: "30vh",
+              justifyContent: 'center',
+              alignItems: 'center',
             }}
           >
-            EZAMAZWE EDUTECH
-          </Typography>
-          <Typography
-            sx={{
-              marginBottom: "20px",
-              fontWeight: "500",
-              color: "#1C3F53",
-              fontSize: "24px",
-              textAlign: "center",
-              textTransform: "uppercase",
-            }}
-          >
-            Login to your account
-          </Typography>
-          <FormControl
-            fullWidth
-            sx={{ marginBottom: "2rem", color: "#1C3F53", fontWeight: "400" }}
-          >
-            <Typography sx={{ marginBottom: "0.3rem", color: "#1C3F53" }}>
-              Email Address
-            </Typography>
-            <TextField
-              variant="outlined"
-              fullWidth
-              sx={{ borderRadius: "12px" }}
+            <img
+              src={require("../assets/Logo.png")}
+              alt="Ezamazwe Logo"
+              width={"90%"}
             />
-            <FormHelperText
-              style={{ color: "red" }}
-              sx={{
-                textAlign: "left",
-                justifyContent: "left",
-                alignSelf: "left",
-              }}
-            >
-              Email address is invalid
-            </FormHelperText>
-          </FormControl>
-          <FormControl
-            fullWidth
-            sx={{ marginBottom: "2rem", color: "#1C3F53", fontWeight: "400" }}
-          >
-            <Typography sx={{ marginBottom: "0.3rem", color: "#1C3F53" }}>
-              Password
-            </Typography>
-            <TextField
-              variant="outlined"
-              type="password"
-              fullWidth
-              sx={{ borderRadius: "12px" }}
-            />
-            <FormHelperText
-              style={{ color: "red" }}
-              sx={{
-                textAlign: "left",
-                justifyContent: "left",
-                alignSelf: "left",
-              }}
-            >
-              Password is invalid
-            </FormHelperText>
-          </FormControl>
-          <Typography
-            component="div"
+          </Container>
+        </Grid>
+
+        <Grid item xs={8} sx={{width: '60%'}}>
+          <Container
             sx={{
-              fontSize: "14px",
-              color: "#1C3F53",
-              textAlign: "right",
-              textDecoration: "underline",
-              alignSelf: "flex-end",
-            }}
-          >
-            Forgot password?
-          </Typography>
-          <Button
-            variant="contained"
-            sx={{
-              marginTop: "30px",
-              bgcolor: "#1C3F53",
-              borderRadius: "30px",
-              padding: "15px",
-              color: "white",
-              width: "200px",
-              fontSize: "14px",
-              textTransform: "uppercase",
-              alignSelf: "center",
-              marginLeft: "30%",
-            }}
-            style={{
-              justifyContent: "center",
+              height: "100vh",
+              display: "flex",
+              flexDirection: "column",
               alignItems: "center",
-              backgroundColor: "#1C3F53",
-              color: "white",
+              justifyContent: "center",
+              width: '60%',
             }}
           >
-            Login
-          </Button>
-        </Box>
-        </Container>
-      </Container>
-    </Container>
+            <Box
+              sx={{
+                backgroundColor: "white",
+                justifyContent: "center",
+                alignItems: "center",
+                alignSelf: "center",
+                padding: "20px 20px",
+                borderRadius: "20px",
+                width: '50vh'
+              }}
+            >
+              <Typography
+                sx={{
+                  marginBottom: "10px",
+                  fontWeight: "600",
+                  color: "#1C3F53",
+                  fontSize: "36px",
+                  textAlign: "center",
+                }}
+              >
+                EZAMAZWE EDUTECH
+              </Typography>
+              <Typography
+                sx={{
+                  marginBottom: "40px",
+                  fontWeight: "500",
+                  color: "#1C3F53",
+                  fontSize: "20px",
+                  textAlign: "center",
+                  textTransform: "uppercase",
+                }}
+              >
+                Login to your account
+              </Typography>
+              <FormControl
+                fullWidth
+                sx={{
+                  marginBottom: "2rem",
+                  color: "#1C3F53",
+                  fontWeight: "400",
+                }}
+              >
+                <Typography sx={{ marginBottom: "0.3rem", color: "#1C3F53", fontSize: '15px' }}>
+                  Email Address
+                </Typography>
+                <TextField
+                  variant="outlined"
+                  fullWidth
+                  sx={{ borderRadius: "12px", height: '30px' }}
+                />
+                <FormHelperText
+                  style={{ color: "red" }}
+                  sx={{
+                    textAlign: "left",
+                    justifyContent: "left",
+                    alignSelf: "left",
+                    marginTop: '30px'
+                  }}
+                >
+                  Email address is invalid
+                </FormHelperText>
+              </FormControl>
+              <FormControl
+                fullWidth
+                sx={{
+                  marginBottom: "2rem",
+                  color: "#1C3F53",
+                  fontWeight: "400",
+                }}
+              >
+                <Typography sx={{ marginBottom: "0.3rem", color: "#1C3F53", fontSize: '15px' }}>
+                  Password
+                </Typography>
+                <TextField
+                  variant="outlined"
+                  type="password"
+                  fullWidth
+                  sx={{ borderRadius: "12px", height: '30px' }}
+                />
+                <FormHelperText
+                  style={{ color: "red" }}
+                  sx={{
+                    textAlign: "left",
+                    justifyContent: "left",
+                    alignSelf: "left",
+                    marginTop: '30px'
+                  }}
+                >
+                  Password is invalid
+                </FormHelperText>
+              </FormControl>
+              <Typography
+                component="div"
+                sx={{
+                  fontSize: "14px",
+                  color: "#1C3F53",
+                  textAlign: "right",
+                  textDecoration: "underline",
+                  alignSelf: "flex-end",
+                }}
+              >
+                Forgot password?
+              </Typography>
+              <Button
+                variant="contained"
+                sx={{
+                  marginTop: "30px",
+                  bgcolor: "#1C3F53",
+                  borderRadius: "30px",
+                  padding: "15px",
+                  color: "white",
+                  width: "200px",
+                  height: "50px",
+                  fontSize: "14px",
+                  textTransform: "uppercase",
+                  alignSelf: "center",
+                  marginLeft: "30%",
+                  marginBottom: "20px",
+                }}
+                style={{
+                  justifyContent: "center",
+                  alignItems: "center",
+                  backgroundColor: "#1C3F53",
+                  color: "white",
+                }}
+              >
+                Login
+              </Button>
+            </Box>
+          </Container>
+        </Grid>
+      </Grid>
+    </Grid>
   );
 }
 
