@@ -100,7 +100,6 @@ function Login() {
                   Email Address
                 </Typography>
                 <OutlinedInput
-                  variant="outlined"
                   fullWidth
                   sx={{ borderRadius: "12px", height: '50px' }}
                 />
@@ -128,7 +127,6 @@ function Login() {
                   Password
                 </Typography>
                 <OutlinedInput
-                  variant="outlined"
                   type="password"
                   fullWidth
                   sx={{ borderRadius: "12px", height: '50px' }}
