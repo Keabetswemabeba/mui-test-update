@@ -57,7 +57,7 @@ function Login() {
           >
             <Box
               sx={{
-                height: "60vh",
+                height: "62vh",
                 backgroundColor: "white",
                 justifyContent: "center",
                 alignItems: "center",
@@ -70,12 +70,13 @@ function Login() {
             >
               <Typography
                 sx={{
-                  marginTop: "20px",
+                  marginTop: "18px",
                   marginBottom: "10px",
                   fontWeight: "600",
                   color: "#1C3F53",
                   fontSize: "36px",
                   textAlign: "center",
+                  fontFamily: "Roboto",
                 }}
               >
                 EZAMAZWE EDUTECH
@@ -84,11 +85,11 @@ function Login() {
                 sx={{
                   marginBottom: "40px",
                   marginTop: "15px",
-                  fontWeight: "500",
+                  fontWeight: "400",
                   color: "#1C3F53",
-                  fontSize: "25px",
+                  fontSize: "23px",
                   textAlign: "center",
-                  fontFamily: 'Poppins',
+                  fontFamily: "Roboto",
                 }}
               >
                 Login to your account
@@ -106,18 +107,26 @@ function Login() {
                     marginBottom: "0.3rem",
                     color: "#1C3F53",
                     fontSize: "18px",
-                    fontFamily: "Poppins",
+                    fontFamily: "Roboto",
+                    fontWeight: "400"
                   }}
                 >
                   Email
                 </Typography>
                 <OutlinedInput
+                  placeholder="Email"
                   fullWidth
                   sx={{
-                    borderRadius: "12px",
+                    "& .MuiOutlinedInput-notchedOutline": {
+                      borderColor: "#1C3F53",
+                    },
+                    "&:hover > .MuiOutlinedInput-notchedOutline": {
+                      borderColor: "#1C3F53",
+                    },
                     height: "50px",
-                    border: "#1C3F53",
-                    borderColor: "#1C3F53",
+                    borderRadius: "12px",
+                    fontFamily: "Roboto",
+                    fontSize: "16px"
                   }}
                 />
                 <FormHelperText
@@ -127,6 +136,8 @@ function Login() {
                     justifyContent: "left",
                     alignSelf: "flex-start",
                     marginTop: "10px",
+                    fontFamily: "Roboto",
+                    fontSize: "14px",
                   }}
                 >
                   Email address is invalid
@@ -145,18 +156,27 @@ function Login() {
                     marginBottom: "0.3rem",
                     color: "#1C3F53",
                     fontSize: "18px",
-                    fontFamily: "Poppins",
+                    fontFamily: "Roboto",
+                    fontWeight: "400"
                   }}
                 >
                   Password
                 </Typography>
                 <OutlinedInput
+                  placeholder="Password"
                   type="password"
                   fullWidth
                   sx={{
-                    borderRadius: "12px",
+                    "& .MuiOutlinedInput-notchedOutline": {
+                      borderColor: "#1C3F53",
+                    },
+                    "&:hover > .MuiOutlinedInput-notchedOutline": {
+                      borderColor: "#1C3F53",
+                    },
                     height: "50px",
-                    borderColor: "#1C3F53",
+                    borderRadius: "12px",
+                    fontFamily: "Roboto",
+                    fontSize: "16px"
                   }}
                 />
                 <FormHelperText
@@ -166,6 +186,8 @@ function Login() {
                     justifyContent: "left",
                     alignSelf: "flex-start",
                     marginTop: "10px",
+                    fontFamily: "Roboto",
+                    fontSize: "14px",
                   }}
                 >
                   Password is invalid
@@ -174,12 +196,13 @@ function Login() {
               <Typography
                 component="div"
                 sx={{
-                  fontSize: "14px",
+                  fontSize: "17px",
                   color: "#1C3F53",
                   textAlign: "right",
                   textDecoration: "underline",
                   alignSelf: "flex-end",
                   marginBottom: "10px",
+                  fontFamily: "Roboto",
                 }}
               >
                 Forgot password?
@@ -187,7 +210,7 @@ function Login() {
               <Button
                 variant="contained"
                 sx={{
-                  marginTop: "30px",
+                  marginTop: "35px",
                   bgcolor: "#1C3F53",
                   borderRadius: "30px",
                   padding: "15px",
@@ -205,6 +228,8 @@ function Login() {
                   alignItems: "center",
                   backgroundColor: "#1C3F53",
                   color: "white",
+                  fontFamily: "Roboto",
+                  textAlign: "center",
                 }}
               >
                 Login
